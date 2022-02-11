@@ -1,0 +1,15 @@
+import { Module } from 'vuex'
+import type { UserState } from './state'
+import { state } from './state'
+import { mutations } from './mutations'
+import  actions  from './actions'
+import { getters } from './getters'
+import { rootState } from '..'
+
+export const user: Module<UserState, rootState> = {
+  namespaced: true,
+  state,
+  mutations,
+  actions,
+  getters,
+}

@@ -1,0 +1,110 @@
+.show {
+    display: flex ; 
+    visibility: show;
+  }
+
+  //隐藏元素 占据空间
+  .hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  //隐藏元素 不占空间
+  .displaynone{
+    display: none !important;
+  }
+
+
+
+  //arrow
+  .normalarrow{
+    transform:rotate(-90deg)
+  }
+
+  .droparrow{
+    transform:rotate(0deg)
+  }
+
+
+  .dialog{
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     z-index: 999;
+  }
+
+  .mask{
+    width:  100%;
+    height: 100%;
+    position: relative;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+
+    background-color: gray;
+
+    opacity: 0.6;
+  }
+
+  .dialogcontainer
+  {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1001 !important;
+    top: 0px;
+    left: 0px;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    
+  }
+
+  .resize-bar::-webkit-scrollbar {
+    width: 1px; height: 1px;
+  }
+
+  .resize_bar
+  {
+    position: relative;
+    z-index: 11;;
+
+    overflow: auto;
+    width: 100%;
+    min-height: 0px;
+    resize: vertical;
+
+    cursor: ns-resize;
+
+    // background-color: black;
+  }
+
+
+   //单位标注
+  .demensionDiv{
+    display: flex;
+
+    align-items: baseline;
+
+    width: 100%;
+    height: 100%;
+
+    border:1px solid rgb(121, 120, 120);
+
+    input{
+
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 90%;
+
+
+      font-size: 14px;
+    }
+    
+    font-size: 10px;
+  }

@@ -1,0 +1,19 @@
+.line{
+    width: 2px;
+    // height: 40px;
+
+    border: none;
+    background-color: rgba(119, 113, 113, 0.89);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteline{
+    width: 1px;
+
+    // height: 100%;
+
+    border: none;
+    background-color: white;
+}
